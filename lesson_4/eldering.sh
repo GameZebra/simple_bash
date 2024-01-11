@@ -27,10 +27,17 @@ yandex=$(( $RANDOM % 10 ))
 echo "Your SECOND battle approaches. Prepare yourself to face Yandex. Pick a number between 0-9. (0-9)"
 read your_attack
 
-if [[ $your_attack == $yandex || $your_attack == "coffee" ]]; then
+if [[ $your_attack == $yandex || $your_attack == "drugs" ]]; then
 	echo "Beast VANQUISHED!! Congrats fellow Traveller"
 else 
-	echo "You Died"
-	exit 1
+	if [[ $USER == "white_l" ]]; then
+		echo "You're cool and wont die yet. try again"
+		if [[ $your_attack == $yandex || $your_attack == "drugs" ]]; then
+			echo "Beast VANQUISHED!! Congrats fellow Traveller"
+		else 
+			echo "You're luck has expired."
+			echo "You died"
+			exit 1
+		fi
 fi
 
