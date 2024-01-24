@@ -1,4 +1,5 @@
 **How to use variables in bash**
+
 You can set a variable
 <pre>
   some_variable="Gosho"
