@@ -34,3 +34,21 @@ until loop
 	  # body of the loop
   done
 </pre>
+
+
+We can also use break and continue inside our loops to modify their behaviour
+
+<pre>
+	while true
+	do
+		if [[ $var == "something" ]]; then 
+			echo "Yes"
+			break
+		elif [[ $var == "I'm not answering"]]; then
+			continue
+		else 
+			echo "No"
+		fi
+
+	done
+</pre>
