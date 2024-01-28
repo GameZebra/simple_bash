@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 # is my internet down?
 
@@ -7,7 +7,7 @@ read target
 
 while true
 do
-	if ping -q -c 2 -w 1 $target > /dev/null; then
+	if ping -q -c 2 -w 5 $target > /dev/null; then
 		echo "Hey, you're up!!"
 		break
 	else
