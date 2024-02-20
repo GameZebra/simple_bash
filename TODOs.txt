@@ -1,0 +1,18 @@
+Ideas what to do:
+
+make a page explaining how and when you should use: 
+((  ))
+( )
+$( )
+[ ]
+[[ ]] 
+
+check the wheather bash if it still works
+try to make another such scrypt which downloads info from the web
+if it requires special website you can use github to host one yourself
+
+the files should be organized in folders
+and the documentation to be expanded
+
+
+
