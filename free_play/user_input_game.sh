@@ -13,8 +13,8 @@ sleep 1
 echo " "
 sleep 1
 
-cmd="1"
-while [[ $cmd != "0" ]]
+cmd=1
+while [[ $cmd != 0 ]];
 do
 	print_menu
 	read cmd
@@ -22,18 +22,41 @@ do
 	if [[ $cmd == 1 ]]; then
 		echo "You are currently logged in as $USER"
 		echo "whit hostname $HOSTNAME"
+		echo ""
+
 	elif [[ $cmd == 2 ]]; then
 		echo "Give me 2 numbers and I'll give you their sum"
-		echo "number 1: "
+		echo -n "number 1: "
 		read num1
-		echo "number 2: "
+		echo -n "number 2: "
 		read num2 
 
 		# print the result
-		echo $num1 + $num2
+		echo $(( num1 + num2 ))
+		echo ""
+
+	elif [[ $cmd == 3 ]]; then
+		echo "Checking if have internet connection"
+		echo " "
+		
+		if ping -c 1 "google.com"; then
+			echo "You're online"
+	       	else
+	 		echo "No internet connection"
+		fi		
+	#TODO current time
+	else 
+		echo "Unrecognised  command"
+		echo ""
 	fi
 done
 
+echo "Exiting the program" ...
+sleep 1 
+echo " "
+echo "Have a nice day!"
+echo " "
+echo " "
 
 
 
