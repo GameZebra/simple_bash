@@ -1,5 +1,7 @@
 Ideas what to do:
 
+++ Documentatin ++
+
 make a page explaining how and when you should use: 
 ((  ))
 ( )
@@ -13,6 +15,67 @@ if it requires special website you can use github to host one yourself
 
 the files should be organized in folders
 and the documentation to be expanded
+
+
+++ Projects ++
+
+1. Append the User Input game with more features
+	try to loop it with a couple of menues where it does things
+
+2. File organizer
+	Build a script that organizes files in a directory by their extensions into separate folders
+	* Build a script that organizes files in a directory by their extensions into separate folders
+
+3. Simple Calculator
+	Write a calculator script that performs basic operations (add, subtract, multiply, divide).
+	* Input: User provides two numbers and an operation.
+	* Output: Display the result.
+
+4. TODO list manager
+	Create a basic to-do list script 
+	* add tasks 
+	* mark tasks as done
+	* display pending tasks
+
+5. Backup Script 
+	Write a script that backs up a specified directory into a compressed .tar.gz file.
+	* Add a timestamp to the backup file name.
+
+6. System information
+	script that displays:
+	* CPU usage
+	* Memory usage
+	* Disk usage
+	* uptime
+
+7. Simple Game
+	Develop a number-guessing game.
+	* The script randomly selects a number between 1 and 100.
+	*The user guesses until they find the correct number, with hints like "higher" or "lower."
+
+8. Network Tools
+	Write a script that performs simple network diagnostics:
+	* Ping a specified host.
+	* Display the IP address of a domain.
+	* Check if specific ports are open.
+9. Log Analyzer
+	Parse a log file (e.g., Apache or Nginx logs) and display:
+	* Total number of requests.
+	* Number of requests per IP address.
+	* Most requested resource.
+
+10. Git Automation
+	Create a script to automate common Git tasks:
+	* Add all changes.
+	* Commit with a user-provided message.
+	* Push to the current branch.
+
+11. Greating file that runs every time you log in
+	using part of the information created in the previous tasks like;
+	* greating
+	* system uptime
+	* network status
+	
 
 
 
