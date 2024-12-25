@@ -45,6 +45,9 @@ do
 	 		echo "No internet connection"
 		fi		
 	#TODO current time
+	elif [[ $cmd ==4 ]]; then
+		echo "the time is"
+		echo $TIME
 	else 
 		echo "Unrecognised  command"
 		echo ""
