@@ -1,6 +1,8 @@
 #!/bin/bash
 
-function print_menu() {
+function print_menu(){
+	sleep 2
+
 	echo "1. info screen"
 	echo "2. simple calculator"
 	echo "3. Am I online?"
@@ -11,7 +13,6 @@ function print_menu() {
 echo "Starting program ..."
 sleep 1
 echo " "
-sleep 1
 
 cmd=1
 while [[ $cmd != 0 ]];
@@ -45,9 +46,11 @@ do
 	 		echo "No internet connection"
 		fi		
 	#TODO current time
-	elif [[ $cmd ==4 ]]; then
+	elif [[ $cmd == 4 ]]; then
 		echo "the time is"
-		echo $TIME
+		date +"%H:%M:%S"
+		echo ""
+		echo ""
 	else 
 		echo "Unrecognised  command"
 		echo ""
